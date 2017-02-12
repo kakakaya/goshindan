@@ -1,10 +1,12 @@
 # goshindan
 Goから診断メーカー（ <https://shindanmaker.com> ）へのアクセスをする
 
-# Usage
-`% goshindan -s 509717 -u kakakaya`
+# コマンド
+## shindan
+診断メーカーでの診断を行い、結果を印字する。用例:
 
-## 引数
-* `-s` 診断メーカーのID。必須。
-* `-u` ユーザー名(診断したい名前を入れて下さいの部分)。必須ではない。
-* `--append-url` 診断メーカーのURLを末尾に付加して出力する。
+`% goshindan shindan -s 509717 -u kakakaya --append-url`
+
+* `--shindan-id / -s` 診断メーカーのID。もし <https://shindanmaker.com/509717> を使って診断を行いたい場合、509717を指定する。
+* `--username / -u` ユーザー名(「診断したい名前を入れて下さい」の部分)。
+* `--append-url / --add-url` 診断メーカーのURLを末尾に付加して出力する。
