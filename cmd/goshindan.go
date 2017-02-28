@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/kakakaya/goshindan/utils"
+	"github.com/kakakaya/goshindan"
 	"gopkg.in/urfave/cli.v1"
 )
 
@@ -52,7 +52,7 @@ func main() {
 				if shindanId <= 0 {
 					return fmt.Errorf("shindanIDの値が不正です: %d\n", shindanId)
 				}
-				result, _ := utils.Shindan(shindanId, c.String("username"))
+				result, _ := goshindan.Shindan(shindanId, c.String("username"))
 				if c.Bool("append-url") {
 					if strings.Index(result, "\n") == -1 {
 						result = fmt.Sprintf("%s https://shindanmaker.com/%d", result, shindanId)
