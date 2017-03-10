@@ -1,0 +1,14 @@
+language: go
+go:
+  - 1.7.1
+  - 1.8
+sudo: false
+go:
+  - tip
+before_install:
+  - go get github.com/mattn/goveralls
+script:
+  - $HOME/gopath/bin/goveralls -service=travis-ci
+env:
+  global:
+    secure: "DAF4v7tIHfz4zPGfDG5PcHxacwO8TeEJihGrq7A7M21qtYMw28I/oXE7wz+SuJWeKVrPEAfRHSLjONVwBSkgZOLH9jbXFaYZ7c/LqIsqvUgHFD6G1LRheJUU3vTS2IJ6v+866J+fD+HvHxtadg/pD7yyiye5wisU37bbFIDoQfLLD76FphsWZammuxsPkXstzDOeJXI7KyFhlw0b93/qUvQLM2VCFTrkZM78jUb8DAHWKcpUT5W+BAwphnlalQsTLeRL0XyrUmPznoAvikClTnH4cur/A1/1TrPWLTJtwkTTY/sv7w4w6/HuSKBO8pGQ85RvSxuAoI7jj8+/WZb1qM2bFS0/j3z8Ktq+xrHLcZgEQFi5+g8XLXdix6Bf/pr/ESqaqXj2vEGc9Xuw1Zb3cvqMcDUZfSwr2+deslvZRsQ3ZqRQ6/IKwr5g60qIylgwPbxw27Q51pp12pVGUCfkjFLKdyIhK29AAhqerKD0C0U5dDIy4mixTC3YS2+SuqxKzdaq4rvQKQYrT7Zrs7o+eGWPI3pJiJ/+0EXeiMSK/w8BOYM98h7r2VOqH23Fil4PCRXDhtgrBP2Py3wSzE0Cos5Nl+gq/RwUp5TlCrM7FO7fXJLzdVITgerfS7yIpEPhzi8soHWlGndyKY4nLNYCMHQrlkLAa3ZV6hSvMOuW+bE="
