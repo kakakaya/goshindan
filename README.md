@@ -2,6 +2,7 @@
 
 [![Travis](https://img.shields.io/travis/kakakaya/goshindan.svg)](https://travis-ci.org/kakakaya/goshindan)
 [![Coveralls](https://img.shields.io/coveralls/kakakaya/goshindan.svg)](https://coveralls.io/github/kakakaya/goshindan)
+[![GoDoc](https://godoc.org/github.com/kakakaya/goshindan?status.png)](https://godoc.org/github.com/kakakaya/goshindan)
 
 Goから診断メーカー（ <https://shindanmaker.com> ）へのアクセスをする
 
