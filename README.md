@@ -9,6 +9,12 @@ Goから診断メーカー（ <https://shindanmaker.com> ）へのアクセス�
 
 [![asciicast](https://asciinema.org/a/8ukl2p62u48748uhqb0fkq7fl.png)](https://asciinema.org/a/8ukl2p62u48748uhqb0fkq7fl)
 
+# 診断メーカー用ライブラリ
+GoDocを見てください。
+
+[![GoDoc](https://godoc.org/github.com/kakakaya/goshindan?status.png)](https://godoc.org/github.com/kakakaya/goshindan)
+
+
 # コマンド
 ## shindan
 診断メーカーでの診断を行い、結果を印字する。用例:
