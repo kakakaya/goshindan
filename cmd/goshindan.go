@@ -13,7 +13,7 @@ func main() {
 	app := cli.NewApp()
 	app.EnableBashCompletion = true
 
-	app.Authors = []cli.Author{cli.Author{
+	app.Authors = []cli.Author{{
 		Name: "kakakaya", Email: "kakakaya+git@gmail.com",
 	}}
 	app.Name = "goshindan(御診断)"
@@ -23,7 +23,7 @@ func main() {
 	app.Flags = []cli.Flag{}
 
 	app.Commands = []cli.Command{
-		cli.Command{
+		{
 			Name:    "shindan",
 			Aliases: []string{"s", "sd", "診断"},
 			Usage:   "診断メーカーでの診断を行い、結果を印字する。",
