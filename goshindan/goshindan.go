@@ -48,16 +48,16 @@ func main() {
 			},
 
 			Action: func(c *cli.Context) error {
-				var shindanId = c.Int("shindan-id")
-				if shindanId <= 0 {
-					return fmt.Errorf("shindanIDの値が不正です: %d\n", shindanId)
+				var shindanID = c.Int("shindan-id")
+				if shindanID <= 0 {
+					return fmt.Errorf("shindanIDの値が不正です: %d", shindanID)
 				}
-				result, _ := goshindan.Shindan(shindanId, c.String("username"))
+				result, _ := goshindan.Shindan(shindanID, c.String("username"))
 				if c.Bool("append-url") {
 					if strings.Index(result, "\n") == -1 {
-						result = fmt.Sprintf("%s https://shindanmaker.com/%d", result, shindanId)
+						result = fmt.Sprintf("%s https://shindanmaker.com/%d", result, shindanID)
 					} else {
-						result = fmt.Sprintf("%s\nhttps://shindanmaker.com/%d\n", result, shindanId)
+						result = fmt.Sprintf("%s\nhttps://shindanmaker.com/%d\n", result, shindanID)
 					}
 				}
 				fmt.Println(result)
