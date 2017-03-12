@@ -1,5 +1,13 @@
 # goshindan
+
+[![Travis](https://img.shields.io/travis/kakakaya/goshindan.svg)](https://travis-ci.org/kakakaya/goshindan)
+[![Coveralls](https://img.shields.io/coveralls/kakakaya/goshindan.svg)](https://coveralls.io/github/kakakaya/goshindan)
+[![GoDoc](https://godoc.org/github.com/kakakaya/goshindan?status.png)](https://godoc.org/github.com/kakakaya/goshindan)
+[![Go Report Card](https://goreportcard.com/badge/github.com/kakakaya/goshindan)](https://goreportcard.com/report/github.com/kakakaya/goshindan)
+
 Goから診断メーカー（ <https://shindanmaker.com> ）へのアクセスをする
+
+[![asciicast](https://asciinema.org/a/8ukl2p62u48748uhqb0fkq7fl.png)](https://asciinema.org/a/8ukl2p62u48748uhqb0fkq7fl)
 
 # コマンド
 ## shindan

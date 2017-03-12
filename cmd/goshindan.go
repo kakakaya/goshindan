@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/kakakaya/goshindan/utils"
+	"github.com/kakakaya/goshindan"
 	"gopkg.in/urfave/cli.v1"
 )
 
@@ -13,7 +13,7 @@ func main() {
 	app := cli.NewApp()
 	app.EnableBashCompletion = true
 
-	app.Authors = []cli.Author{cli.Author{
+	app.Authors = []cli.Author{{
 		Name: "kakakaya", Email: "kakakaya+git@gmail.com",
 	}}
 	app.Name = "goshindan(御診断)"
@@ -23,7 +23,7 @@ func main() {
 	app.Flags = []cli.Flag{}
 
 	app.Commands = []cli.Command{
-		cli.Command{
+		{
 			Name:    "shindan",
 			Aliases: []string{"s", "sd", "診断"},
 			Usage:   "診断メーカーでの診断を行い、結果を印字する。",
@@ -52,7 +52,7 @@ func main() {
 				if shindanId <= 0 {
 					return fmt.Errorf("shindanIDの値が不正です: %d\n", shindanId)
 				}
-				result, _ := utils.Shindan(shindanId, c.String("username"))
+				result, _ := goshindan.Shindan(shindanId, c.String("username"))
 				if c.Bool("append-url") {
 					if strings.Index(result, "\n") == -1 {
 						result = fmt.Sprintf("%s https://shindanmaker.com/%d", result, shindanId)
