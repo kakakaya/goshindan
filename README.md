@@ -5,17 +5,15 @@
 [![GoDoc](https://godoc.org/github.com/kakakaya/goshindan?status.png)](https://godoc.org/github.com/kakakaya/goshindan)
 [![Go Report Card](https://goreportcard.com/badge/github.com/kakakaya/goshindan)](https://goreportcard.com/report/github.com/kakakaya/goshindan)
 
-Goから診断メーカー（ <https://shindanmaker.com> ）へのアクセスをする
+Goから診断メーカー（ <https://shindanmaker.com> ）へのアクセスをするコマンドラインツール及びライブラリ
 
-[![asciicast](https://asciinema.org/a/8ukl2p62u48748uhqb0fkq7fl.png)](https://asciinema.org/a/8ukl2p62u48748uhqb0fkq7fl)
-
-# 診断メーカー用ライブラリ
+# ライブラリ
 GoDocを見てください。
 
 [![GoDoc](https://godoc.org/github.com/kakakaya/goshindan?status.png)](https://godoc.org/github.com/kakakaya/goshindan)
 
 
-# コマンド
+# コマンドラインツール
 ## shindan
 診断メーカーでの診断を行い、結果を印字する。用例:
 
@@ -24,3 +22,8 @@ GoDocを見てください。
 * `--shindan-id / -s` 診断メーカーのID。もし <https://shindanmaker.com/509717> を使って診断を行いたい場合、509717を指定する。
 * `--username / -u` ユーザー名(「診断したい名前を入れて下さい」の部分)。
 * `--append-url / --add-url` 診断メーカーのURLを末尾に付加して出力する。
+
+# Screencast
+
+[![asciicast](https://asciinema.org/a/8ukl2p62u48748uhqb0fkq7fl.png)](https://asciinema.org/a/8ukl2p62u48748uhqb0fkq7fl)
+
