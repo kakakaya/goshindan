@@ -17,6 +17,7 @@ func Shindan(shindanID int, userName string) (string, error) {
 	values := url.Values{}
 	values.Add("u", userName)
 
+	fmt.Println(shindanURL)
 	resp, err := http.PostForm(shindanURL, values)
 	if err != nil {
 		return "", err
