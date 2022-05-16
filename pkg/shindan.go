@@ -34,7 +34,7 @@ func Shindan(shindanID int, userName string) (string, error) {
 }
 
 // ShindanInfo is a struct to describe shindan.
-type ShindanInfo struct {
+type Shindan struct {
 	Title        string
 	Description  string
 	URL          string
@@ -99,4 +99,18 @@ func GetShindanInfo(shindanID int) (ShindanInfo, error) {
 		AuthorPage:   authorPage,
 		Keywords:     keywords,
 	}, nil
+}
+
+type User struct {
+	ID string
+	Name string
+	UserName string				// @name
+	Following int
+	Followers int
+	ShindanCount int
+}
+
+// ListCreatedShindans ...
+func (s *User)ListCreatedShindans() ([]Shindan, error) {
+	
 }
