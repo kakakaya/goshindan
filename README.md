@@ -1,3 +1,7 @@
+# Discontinued
+
+Due to change of shindanmaker.com, this project no longer maintained.
+
 # goshindan
 
 [![Travis](https://img.shields.io/travis/kakakaya/goshindan.svg)](https://travis-ci.org/kakakaya/goshindan)
@@ -26,4 +30,3 @@ GoDocを見てください。
 # Screencast
 
 [![asciicast](https://asciinema.org/a/8ukl2p62u48748uhqb0fkq7fl.png)](https://asciinema.org/a/8ukl2p62u48748uhqb0fkq7fl)
-
